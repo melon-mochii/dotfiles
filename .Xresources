@@ -35,4 +35,5 @@
 *.color7:       #006cd5
 *.color15:      #00e5ff
 
-[URxvt.scrollBar: false]
+URxvt*scrollBar:       false
+URxvt*scrollBar_right: false
