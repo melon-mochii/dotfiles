@@ -169,5 +169,5 @@ bar {
 bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 bindsym Shift+Print exec "scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 
-exec_always --no-startup-id nitrogen --set-scaled Pictures/nice.png
+exec_always --no-startup-id nitrogen --set-scaled Pictures/wallpapers/wallpaper4:3.png
 bindsym $mod+q exec "dmenu_run -nf '#FFFFFF' -nb '#FF69B4' -sb '#FF69B4' -sf '#FFFFFF' -fn 'monospace-10' -p 'run'"
