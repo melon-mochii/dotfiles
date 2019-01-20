@@ -24,7 +24,7 @@ font pango:Microsoft Sans Serif 8
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
+# font, it doesnât scale on retina/hidpi displays.
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -120,10 +120,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
+        # Pressing left will shrink the windowâs width.
+        # Pressing right will grow the windowâs width.
+        # Pressing up will shrink the windowâs height.
+        # Pressing down will grow the windowâs height.
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
@@ -166,7 +166,7 @@ bar {
   }
 }
 
-bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -d 0.2 -e 'xclip -selection c -t image/png < $f'"
 bindsym Shift+Print exec "scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 
 exec_always --no-startup-id nitrogen --set-scaled Pictures/wallpapers/wallpaper4:3.png
